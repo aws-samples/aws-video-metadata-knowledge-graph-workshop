@@ -1,6 +1,3 @@
-Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.</br>
-SPDX-License-Identifier: MIT-0
-
 ## Video metadata extraction and knowledge graph
 
 This repository contains a series of 4 jupyter notebooks demonstrating how AWS AI Services like Amazon Rekognition, Amazon Transcribe and Amazon Comprehend can help you extract valuable metadata from your video assets and store that information in a Graph database like Amazon Neptune for maximum query performance and flexibility.
