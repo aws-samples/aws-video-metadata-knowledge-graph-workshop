@@ -35,27 +35,45 @@ Resources clean-up
 
 ## Getting started
 
-To run those notebooks you'll need to have a jupyter notebook instance and you'll need to create an Amazon Neptune database if you want to build the graph in part 3 of the workshop (otherwise ignore).
+To run those notebooks you'll need to create a jupyter notebook instance in sagemaker.
 
-You need to make sure that you create the notebook instance and the Neptune database within the same VPC and that your associated security group allows them to communicate.
+In the AWS console, first make sure you're in the right region and search for Sagemaker. Write down the region as you'll later need to create your Amazon Neptune database in the same region.
 
-Please follow the below instructions to create your Amazon Neptune cluster. 
-You can either follow the console instructions or automatically deploy your cluster with a cloudformation template as described here:  https://docs.aws.amazon.com/neptune/latest/userguide/get-started-create-cluster.html
+![Alt text](./static/notebook-creation-part1.png?raw=true "notebook-creation-part01")
 
-Note that you'll be asked in part0 of the workshop to retrieve the endpoint url and port of your newly created Amazon Neptune instance.
+In Amazon Sagemaker, click on "Notebook instances".
 
-To create a notebook, I recommend you to use sagemaker studio and the datascience kernel. This is what I used for developing/testing this workshop.
+![Alt text](./static/notebook-creation-part1.png?raw=true "notebook-creation-part02")
 
-if you haven't initialised your sagemaker studio environment, follow the instructions here:
-https://docs.aws.amazon.com/sagemaker/latest/dg/onboard-iam.html
+In the "Create notebook instance wizard", enter the following:
 
-Do the standard setup and make sure you configure the same VPC as the one you used to create your Amazon Neptune DB.
+![Alt text](./static/notebook-creation-part1.png?raw=true "notebook-creation-part1")
 
-Once your studio environment is up and running, you can use the git integration functionality to retrieve the workshop's notebooks as described here:
-https://docs.aws.amazon.com/sagemaker/latest/dg/studio-tasks-git.html
+For Permissions, click on "create a new role". 
 
-Don't forget to use the datascience kernel to run your notebook as it comes packaged with all the default libraries required to run this notebooks.
-https://docs.aws.amazon.com/sagemaker/latest/dg/notebooks-available-kernels.html
+![Alt text](./static/notebook-creation-part1.png?raw=true "notebook-creation-part2")
+
+Then specify an existing S3 bucket where you will later upload the .mp4 video sample to be used in the notebooks.
+
+![Alt text](./static/notebook-creation-part1.png?raw=true "notebook-creation-part3")
+
+In Network, specify a VPC, subnet and a security group. I used the default ones on my end. Write down the VPC name as you'll need to deploy your Amazon Neptune DB in the same VPC later in notebook part0 and make sure your security group allows traffic between the two.
+
+![Alt text](./static/notebook-creation-part1.png?raw=true "notebook-creation-part4")
+
+You can specify the git repo in the Git repositories section or do that later within the notebook.
+Then hit the "Create notebook instance" button.
+
+![Alt text](./static/notebook-creation-part1.png?raw=true "notebook-creation-part5")
+
+Once your instance's status is "InService", click on "Open JupyterLab".
+
+![Alt text](./static/notebook-creation-part1.png?raw=true "notebook-creation-part6")
+
+Navigate in the aws-video-metadata-knowledge-graph-workshop folder, double click on the part0-setup.ipynb notebook and when prompted to select a kernel, choose "conda_python3". You'll need to repeat this operation when opening the other notebooks.
+
+![Alt text](./static/notebook-creation-part1.png?raw=true "notebook-creation-part7")
+
 
 ## Costs
 
