@@ -17,19 +17,19 @@ The diagram below summarises the workflow:
 
 Topics addressed within the different notebooks:
 
-Part 0:</br>
+Part 0:
 Create the environment (S3 bucket, IAM roles/polices, SNS topic, etc) and upload your sample video
 
-Part 1:</br>
+Part 1:
 Use Amazon Rekognition to detect scenes and labels from your video
 
-Part 2:</br>
+Part 2:
 Use Amazon Transcribe and Amazon Comprehend to respectively transcibe audio to text and extract metadata (topics, Named Entities) from transcripts.
 
-Part 3:</br>
+Part 3:
 Store all the previously extracted metadata in Amazon Neptune and query the graph.
 
-Part 4:</br>
+Part 4:
 Resources clean-up
 
 
