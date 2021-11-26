@@ -12,6 +12,9 @@ The metadata related to the video, segments, scenes, entities, labels will be st
 Amazon Neptune is a fully managed low latency graph database service that will allow us to store metadata as nodes (aka vertices) and branches (aka edges) to represent relationships between the nodes.
 https://aws.amazon.com/neptune/
 
+The diagram below summarises the workflow:
+![Alt text](./static/overview.png?raw=true "workflow overview")
+
 Topics addressed within the different parts:
 
 Part 0:
