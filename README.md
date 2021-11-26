@@ -13,7 +13,7 @@ Amazon Neptune is a fully managed low latency graph database service that will a
 https://aws.amazon.com/neptune/
 
 The diagram below summarises the workflow:
-![Alt text](./static/overview.png?raw=true "workflow overview")
+![workflow overview](./static/overview.png?raw=true "workflow overview")
 
 Topics addressed within the different notebooks:
 
@@ -39,40 +39,40 @@ To run those notebooks you'll need to create a jupyter notebook instance in sage
 
 In the AWS console, first make sure you're in the right region and search for Sagemaker. Write down the region as you'll later need to create your Amazon Neptune database in the same region.
 
-![Alt text](./static/notebook-creation-part01.png?raw=true "notebook-creation-part01")
+![notebook creation](./static/notebook-creation-part01.png?raw=true "notebook-creation-part01")
 
 In Amazon Sagemaker, click on "Notebook instances".
 
-![Alt text](./static/notebook-creation-part02.png?raw=true "notebook-creation-part02")
+![notebook creation](./static/notebook-creation-part02.png?raw=true "notebook-creation-part02")
 
 In the "Create notebook instance wizard", enter the following:
 
-![Alt text](./static/notebook-creation-part1.png?raw=true "notebook-creation-part1")
+![notebook creation](./static/notebook-creation-part1.png?raw=true "notebook-creation-part1")
 
 For Permissions, click on "create a new role". 
 
-![Alt text](./static/notebook-creation-part2.png?raw=true "notebook-creation-part2")
+![notebook creation](./static/notebook-creation-part2.png?raw=true "notebook-creation-part2")
 
 Then specify an existing S3 bucket where you will later upload the .mp4 video sample to be used in the notebooks.
 
-![Alt text](./static/notebook-creation-part3.png?raw=true "notebook-creation-part3")
+![notebook creation](./static/notebook-creation-part3.png?raw=true "notebook-creation-part3")
 
 In Network, specify a VPC, subnet and a security group. I used the default ones on my end. Write down the VPC name as you'll need to deploy your Amazon Neptune DB in the same VPC later in notebook part0 and make sure your security group allows traffic between the two.
 
-![Alt text](./static/notebook-creation-part4.png?raw=true "notebook-creation-part4")
+![notebook creation](./static/notebook-creation-part4.png?raw=true "notebook-creation-part4")
 
 You can specify the git repo in the Git repositories section or do that later within the notebook.
 Then hit the "Create notebook instance" button.
 
-![Alt text](./static/notebook-creation-part5.png?raw=true "notebook-creation-part5")
+![notebook creation](./static/notebook-creation-part5.png?raw=true "notebook-creation-part5")
 
 Once your instance's status is "InService", click on "Open JupyterLab".
 
-![Alt text](./static/notebook-creation-part6.png?raw=true "notebook-creation-part6")
+![notebook creation](./static/notebook-creation-part6.png?raw=true "notebook-creation-part6")
 
 Navigate in the aws-video-metadata-knowledge-graph-workshop folder, double click on the part0-setup.ipynb notebook and when prompted to select a kernel, choose "conda_python3". You'll need to repeat this operation when opening the other notebooks.
 
-![Alt text](./static/notebook-creation-part7.png?raw=true "notebook-creation-part7")
+![notebook creation](./static/notebook-creation-part7.png?raw=true "notebook-creation-part7")
 
 
 ## Costs
