@@ -79,7 +79,7 @@ Navigate in the aws-video-metadata-knowledge-graph-workshop folder, double click
 
 Please note that you might incur costs by running those notebooks. Most of those AI services have free tier but depending on how much you've already used or depending on the size of the video assets you're using, it might go over the limit.
 
-Finally, if you're not planning to use those resources anymore at the end of the workshop, don't forget to shutdown/delete your Amazon Neptune instance, your Sagemaker studio notebook instances and run the part4-cleanup notebook to delete all the other resources created throughout the notebooks (S3 buckets, IAM roles, SNS topics, etc).
+Finally, if you're not planning to use those resources anymore at the end of the workshop, don't forget to shutdown/delete your Amazon Neptune instance, your Sagemaker notebook instances and run the part4-cleanup notebook to delete all the other resources created throughout the notebooks (S3 buckets, IAM roles, SNS topics, etc).
 
 Before proceeding, please check the related services pricing pages:
 
